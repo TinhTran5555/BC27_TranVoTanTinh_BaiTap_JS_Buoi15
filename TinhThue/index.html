@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TinhThueThuNhapCaNhan</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <h1 class="text-center">Tính Thuế Thu Nhập Cá Nhân</h1>
+            <div class="mb-3">
+              <label for="name" class="form-label">Nhập Họ Và Tên</label>
+              <input
+                type="text"
+                id="name"
+                class="form-control"
+                placeholder="Nguyễn Văn A"
+              />
+              <label for="thuNhap" class="form-label"
+                >Nhập Tổng Thu Nhập Trong Một Năm (Triệu Đồng)</label
+              >
+              <input
+                type="text"
+                id="thuNhap"
+                class="form-control"
+                placeholder=""
+              />
+              <label for="soNguoi" class="form-label"
+                >Nhập Số Người Phụ Thuộc</label
+              >
+              <input
+                type="text"
+                id="soNguoi"
+                class="form-control"
+                placeholder=""
+              />
+            </div>
+            <div class="mt-4">
+              <button type="button" onclick="hienKetQua()">
+                Tính thuế phải nộp
+              </button>
+            </div>
+            <div id="thongBaoTienThue" style="display: none">
+              <div id="xuatTien" class="mt-4"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
